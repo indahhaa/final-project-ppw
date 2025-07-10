@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nama Firma Hukum - Beranda</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-5" href="#">Kantor Hukum Kota</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./konsultasi/konsultasi.html"
+                >Konsultasi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="./img/home/lw3.jpg"
+            class="d-block w-100 c-img"
+            alt="Gedung pengadilan atau firma hukum"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Profesionalisme & Keahlian Terdepan</h2>
+            <p>
+              Memberikan solusi hukum yang komprehensif dan didukung oleh tim
+              ahli yang berpengalaman.
+            </p>
+            <a href="konsultasi/konsultasi.html" class="btn btn-lg btn-danger"
+              >Konsultasi Gratis</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="./img/home/lw1.jpg"
+            class="d-block w-100 c-img"
+            alt="Ruang perpustakaan hukum"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Dedikasi Penuh Untuk Klien</h2>
+            <p>
+              Kami berkomitmen untuk memperjuangkan hak dan kepentingan Anda
+              dengan integritas tinggi.
+            </p>
+            <a href="#layanan" class="btn btn-lg btn-danger"
+              >Lihat Layanan Kami</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="./img/home/lw2.jpg"
+            class="d-block w-100 c-img"
+            alt="Diskusi tim firma hukum"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Integritas dan Hasil Terbukti</h2>
+            <p>
+              Membangun kepercayaan melalui pendekatan yang transparan dan hasil
+              yang memuaskan.
+            </p>
+            <a href="#kontak" class="btn btn-lg btn-danger">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="tentang-kami" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-5 fw-bold mb-4">Tentang Firma Hukum Kami</h2>
+            <p class="lead text-muted">
+              Justisia adalah firma hukum yang berdiri sejak tahun 2025, 
+              berfokus pada penyediaan layanan hukum yang profesional, strategis, dan berintegritas tinggi. 
+              Kami menangani berbagai bidang hukum—mulai dari litigasi, korporasi, hingga hukum bisnis dan teknologi.</br>
+            </br>
+              Didukung oleh tim advokat berpengalaman, 
+              kami berkomitmen menjadi mitra hukum yang andal bagi individu, perusahaan, maupun institusi, 
+              dengan solusi yang tepat, efisien, dan sesuai kebutuhan klien.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Visi</h4>
+                <p class="card-text">
+                  Menjadi firma hukum terkemuka yang terpercaya dalam memberikan solusi hukum strategis, 
+                  berintegritas, dan berorientasi pada kepentingan klien 
+                  di tingkat nasional maupun internasional.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-3">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Misi</h4>
+                <p class="card-text">
+                  Kami berkomitmen memberikan layanan hukum yang profesional, efektif, 
+                  dan berlandaskan etika. Melalui pendekatan yang solutif dan responsif, 
+                  kami membangun kepercayaan klien serta terus meningkatkan kompetensi tim 
+                  untuk menghadapi dinamika hukum yang terus berkembang.
+                </p>
+              </div>
+            </div>
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Nilai-Nilai Kami</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-check-circle-fill text-danger me-2"></i
+                    >Integritas
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-danger me-2"></i
+                    >Profesionalisme
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-danger me-2"></i
+                    >Berorientasi pada Klien
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-danger me-2"></i
+                    >Kolaborasi
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-5 fw-bold">Layanan Hukum Kami</h2>
+            <p class="lead text-muted">
+              Kami menyediakan berbagai layanan hukum untuk menjawab kebutuhan
+              Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-shield-lock-fill"></i>
+                </div>
+                <h4 class="card-title">Hukum Pidana</h4>
+                <p class="card-text">
+                  Pendampingan dan pembelaan pada semua tingkatan proses hukum,
+                  mulai dari penyidikan hingga persidangan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-file-earmark-text-fill"></i>
+                </div>
+                <h4 class="card-title">Hukum Perdata</h4>
+                <p class="card-text">
+                  Menangani sengketa perdata seperti wanprestasi, perbuatan
+                  melawan hukum, utang-piutang, dan lainnya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-building-fill"></i>
+                </div>
+                <h4 class="card-title">Hukum Perusahaan</h4>
+                <p class="card-text">
+                  Layanan pendirian perusahaan, perizinan, penyusunan kontrak,
+                  merger, dan akuisisi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h4 class="card-title">Hukum Keluarga</h4>
+                <p class="card-text">
+                  Bantuan hukum untuk masalah perkawinan, perceraian, hak asuh
+                  anak, dan waris.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-house-heart-fill"></i>
+                </div>
+                <h4 class="card-title">Hukum Properti</h4>
+                <p class="card-text">
+                  Mengurus sengketa tanah, jual-beli properti, sewa-menyewa, dan
+                  sertifikasi tanah.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <div class="service-icon mb-3">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <h4 class="card-title">Ketenagakerjaan</h4>
+                <p class="card-text">
+                  Penyelesaian perselisihan hubungan industrial, PHK, dan
+                  penyusunan perjanjian kerja.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tim-kami" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-5 fw-bold">Tim Profesional Kami</h2>
+            <p class="lead text-muted">
+              Para ahli hukum yang berdedikasi dan siap membantu Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm team-card">
+              <div class="card-body">
+                
+                <h4 class="card-title mt-3">Dian Indah, S.H., M.H.</h4>
+                <p class="text-danger fw-bold">Ahli Hukum Pidana</p>
+                <p class="card-text text-muted small">
+                  Dengan pengalaman lebih dari 10 tahun, Dian Indah telah
+                  berhasil menangani ratusan kasus pidana kompleks dengan
+                  tingkat keberhasilan yang tinggi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm team-card">
+              <div class="card-body">
+                
+                <h4 class="card-title mt-3">Nailah Putri Alidya, S.H.</h4>
+                <p class="text-danger fw-bold">Ahli Hukum Keluarga</p>
+                <p class="card-text text-muted small">
+                  Citra memiliki empati yang tinggi dan keahlian dalam mediasi,
+                  menjadikannya pilihan utama untuk penyelesaian sengketa
+                  keluarga dan waris.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm team-card">
+              <div class="card-body">
+                
+                <h4 class="card-title mt-3">Iyan, S.H.</h4>
+                <p class="text-danger fw-bold">Ahli Hukum Perusahaan</p>
+                <p class="card-text text-muted small">
+                  Spesialis dalam pendirian perusahaan, kontrak bisnis, dan
+                  merger. David memberikan solusi hukum yang strategis untuk
+                  korporasi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center border-0 shadow-sm team-card">
+              <div class="card-body">
+               
+                <h4 class="card-title mt-3">Mikael, S.H.</h4>
+                <p class="text-danger fw-bold">Ahli Hukum Ketenagakerjaan</p>
+                <p class="card-text text-muted small">
+                  Spesialis dalam perselisihan hubungan industrial, PHK, dan
+                  penyusunan perjanjian kerja.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-5 fw-bold">Hubungi Kami</h2>
+            <p class="lead text-muted">
+              Kami siap mendengarkan dan memberikan solusi terbaik untuk Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4 p-md-5">
+                <div class="d-flex align-items-start mb-4">
+                  <i class="bi bi-geo-alt-fill text-danger fs-3 me-4"></i>
+                  <div>
+                    <strong class="d-block">Alamat</strong>
+                    <p class="text-muted mb-0">
+                      Jalan Amikom No. 1, Yogyakarta,<br />Daerah Istimewa Yogyakarta,
+                      55281, Indonesia.
+                    </p>
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-start mb-4">
+                  <i class="bi bi-telephone-fill text-danger fs-3 me-4"></i>
+                  <div>
+                    <strong class="d-block">Telepon</strong>
+                    <p class="text-muted mb-0">(024) 321-1234</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="d-flex align-items-start">
+                  <i class="bi bi-envelope-fill text-danger fs-3 me-4"></i>
+                  <div>
+                    <strong class="d-block">Email</strong>
+                    <p class="text-muted mb-0">Justisia@firmahukum.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-danger">
+              Justisia Firma Hukim
+            </h5>
+            <p class="text-white-50">
+              Mitra hukum terpercaya yang mengedepankan integritas,
+              profesionalisme, dan solusi yang efektif untuk setiap permasalahan
+              hukum Anda.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold">Navigasi</h5>
+            <p><a href="#" class="footer-link">Beranda</a></p>
+            <p><a href="#tentang-kami" class="footer-link">Tentang Kami</a></p>
+            <p><a href="#layanan" class="footer-link">Layanan</a></p>
+            <p><a href="#tim-kami" class="footer-link">Tim Kami</a></p>
+            <p><a href="#kontak" class="footer-link">Kontak</a></p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold">Ikuti Kami</h5>
+            <div>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="text-white-50">
+              &copy; 2025 Justisia. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

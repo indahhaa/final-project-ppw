@@ -1,0 +1,58 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; /* Ketebalan Regular untuk semua teks biasa */
+}
+
+/* Memberi ketebalan khusus untuk semua judul */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-weight: 700; /* Ketebalan Bold untuk judul */
+}
+
+/* Opsional: Jika ingin judul utama lebih tebal lagi */
+h1.display-5 {
+  font-weight: 900; /* Ketebalan Black */
+}
+
+.bg-maroon {
+  background: linear-gradient(to right, #4b0000, #2b2b2b);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  transition: all 0.3s ease;
+}
+
+.blog-header {
+  background-color: #f8f9fa; /* Warna latar abu-abu terang */
+}
+
+.blog-post-card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blog-post-card .card-img-top {
+  max-height: 400px;
+  object-fit: cover;
+}

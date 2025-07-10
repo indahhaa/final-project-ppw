@@ -1,0 +1,84 @@
+body {
+  background-color: #f4f7f6;
+  font-family: "Lato", sans-serif;
+  font-weight: 400; /* Ketebalan Regular untuk semua teks biasa */
+}
+
+/* Memberi ketebalan khusus untuk semua judul */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-weight: 700; /* Ketebalan Bold untuk judul */
+}
+
+/* Opsional: Jika ingin judul utama lebih tebal lagi */
+h1.display-5 {
+  font-weight: 900; /* Ketebalan Black */
+}
+
+.container {
+  max-width: 800px;
+}
+.card {
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.form-label {
+  font-weight: 600;
+}
+.form-title {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Styling untuk area Nota/Ringkasan */
+#areaNota {
+  display: none; /* Sembunyikan secara default */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.nota-header {
+  background-color: #800000; /* Warna Maroon */
+  color: white;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.nota-body {
+  padding: 1.5rem;
+}
+.nota-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+.nota-item:last-child {
+  border-bottom: none;
+}
+.nota-label {
+  font-weight: 600;
+  color: #555;
+}
+.nota-data {
+  text-align: right;
+  color: #333;
+}
+.nota-data.keluhan {
+  text-align: left;
+  margin-top: 0.5rem;
+  white-space: pre-wrap; /* Agar paragraf tetap rapi */
+  width: 100%;
+}
+
+/* Styling untuk pesan error */
+#pesanError {
+  color: #dc3545;
+  font-size: 0.9rem;
+  display: none;
+}

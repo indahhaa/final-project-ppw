@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Konsultasi Awal</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="konsultasi.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="card p-4 p-md-5">
+        <div id="areaForm">
+          <h1 class="text-center mb-2 form-title">Formulir Konsultasi Awal</h1>
+          <p class="text-center text-muted mb-5">
+            Silakan isi formulir di bawah ini dengan detail permasalahan Anda.
+            Tim kami akan segera menindaklanjuti.
+          </p>
+
+          <form id="formKonsultasi" novalidate>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder="Masukkan nama lengkap Anda"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Alamat Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="contoh@email.com"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telepon"
+                  placeholder="08123456789"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="layanan" class="form-label"
+                >Jenis Layanan yang Dibutuhkan</label
+              >
+              <select class="form-select" id="layanan" required>
+                <option value="" selected disabled>
+                  Pilih jenis layanan...
+                </option>
+                <option value="Hukum Pidana">Hukum Pidana</option>
+                <option value="Hukum Perdata">Hukum Perdata</option>
+                <option value="Hukum Perusahaan">Hukum Perusahaan</option>
+                <option value="Hukum Keluarga">Hukum Keluarga</option>
+                <option value="Hukum Properti">Hukum Properti</option>
+                <option value="Ketenagakerjaan">Ketenagakerjaan</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="keluhan" class="form-label"
+                >Jelaskan Keluhan/Permasalahan Anda</label
+              >
+              <textarea
+                class="form-control"
+                id="keluhan"
+                rows="6"
+                placeholder="Tuliskan detail permasalahan hukum yang Anda hadapi..."
+                required
+              ></textarea>
+            </div>
+            <div class="mb-4">
+              <label for="dokumen" class="form-label"
+                >Unggah Dokumen Pendukung (Opsional)</label
+              >
+              <input class="form-control" type="file" id="dokumen" />
+              <div id="infoFile" class="form-text"></div>
+            </div>
+            <button type="submit" class="btn btn-danger w-100 py-2 fs-5">
+              Kirim & Lihat Ringkasan
+            </button>
+            <div id="pesanError" class="mt-3 text-center"></div>
+          </form>
+        </div>
+
+        <div id="areaNota">
+          <div class="nota-header text-center">
+            <h2 class="mb-0 fs-4">
+              <i class="bi bi-check-circle-fill"></i> Formulir Terkirim
+            </h2>
+          </div>
+          <div class="nota-body">
+            <p class="text-center text-muted mb-4">
+              Terima kasih. Berikut adalah ringkasan data yang Anda kirimkan.
+            </p>
+            <div class="nota-item">
+              <span class="nota-label">Nama Lengkap</span>
+              <span class="nota-data" id="notaNama"></span>
+            </div>
+            <div class="nota-item">
+              <span class="nota-label">Alamat Email</span>
+              <span class="nota-data" id="notaEmail"></span>
+            </div>
+            <div class="nota-item">
+              <span class="nota-label">Nomor Telepon</span>
+              <span class="nota-data" id="notaTelepon"></span>
+            </div>
+            <div class="nota-item">
+              <span class="nota-label">Jenis Layanan</span>
+              <span class="nota-data" id="notaLayanan"></span>
+            </div>
+            <div class="nota-item">
+              <span class="nota-label">Dokumen Pendukung</span>
+              <span class="nota-data" id="notaDokumen"></span>
+            </div>
+            <div class="nota-item flex-column align-items-start">
+              <span class="nota-label">Detail Keluhan</span>
+              <p class="nota-data keluhan" id="notaKeluhan"></p>
+            </div>
+          </div>
+          <div class="p-4 text-center border-top">
+            <button id="buatLagi" class="btn btn-outline-danger">
+              Buat Konsultasi Baru
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="konsultasi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Firma Hukum Anda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">FIRMA HUKUM ANDA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../konsultasi/konsultasi.html"
+                >Konsultasi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="blog-header py-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Wawasan & Artikel Hukum</h1>
+        <p class="lead text-muted">
+          Kumpulan analisis, panduan, dan berita hukum terkini dari para ahli
+          kami.
+        </p>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card blog-post-card mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1589216532372-1c2a36790039?q=80&w=800"
+              class="card-img-top"
+              alt="Gavel and law books"
+            />
+            <div class="card-body">
+              <div class="mb-2">
+                <a href="#" class="badge bg-danger text-decoration-none"
+                  >Hukum Pidana</a
+                >
+              </div>
+              <h3 class="card-title h4">
+                5 Langkah yang Harus Dilakukan Jika Anda Menerima Surat Somasi
+              </h3>
+              <p class="card-text text-muted">
+                Menerima surat somasi bisa jadi pengalaman yang menegangkan.
+                Jangan panik, pahami apa arti surat tersebut dan langkah-langkah
+                hukum yang tepat untuk menanggapinya...
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="artikel-detail.html" class="btn btn-outline-danger"
+                  >Baca Selengkapnya →</a
+                >
+                <small class="text-muted">Oleh Budi Santoso, 8 Juli 2025</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card blog-post-card mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1505664194779-8beace7a2044?q=80&w=800"
+              class="card-img-top"
+              alt="Office discussion"
+            />
+            <div class="card-body">
+              <div class="mb-2">
+                <a href="#" class="badge bg-danger text-decoration-none"
+                  >Hukum Perusahaan</a
+                >
+              </div>
+              <h3 class="card-title h4">
+                Panduan Lengkap Membuat Perjanjian Kerja yang Adil
+              </h3>
+              <p class="card-text text-muted">
+                Perjanjian kerja adalah fondasi hubungan antara perusahaan dan
+                karyawan. Artikel ini akan membahas poin-poin krusial yang harus
+                ada dalam perjanjian kerja untuk melindungi kedua belah pihak...
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="artikel-detail.html" class="btn btn-outline-danger"
+                  >Baca Selengkapnya →</a
+                >
+                <small class="text-muted">Oleh David Wijaya, 5 Juli 2025</small>
+              </div>
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">Sebelumnya</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Selanjutnya</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <aside class="col-lg-4">
+          <div class="card p-3 mb-4">
+            <h5 class="fw-bold">Pencarian</h5>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cari artikel..."
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="card p-3 mb-4">
+            <h5 class="fw-bold">Kategori</h5>
+            <ul class="list-group list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action"
+                >Hukum Pidana</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Hukum Perdata</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Hukum Perusahaan</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Sengketa Tanah</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Ketenagakerjaan</a
+              >
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <p>&copy; 2025 Firma Hukum Anda. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
